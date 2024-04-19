@@ -1,0 +1,181 @@
+body {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+    background-color: #f2f4f8;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.form-add-contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 900px;
+}
+
+.form-add-contact-inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-add-contact-inputs input[type=tel], [type=text] {
+    width: 400px;
+    height: 40px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.form-add-contact-inputs input[type=submit] {
+    background-color: #41a180;
+    width: 400px;
+    height: 50px;
+    box-sizing: border-box;
+    font-size: 20px;
+    border-width: inherit;
+    color: white;
+}
+
+.error {
+    font-size: 20px;
+    margin-top: 10px;
+    color: red;
+    text-align: center;
+}
+.menu ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    padding: 0;}
+
+.menu ul li {
+    margin: 20px 10px;
+}
+
+.menu ul a {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    color: #000000;
+    font-size: 20px;
+}
+
+th {
+    text-align: left;
+}
+
+table {
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: normal;
+    border: none;
+    border-collapse: collapse;
+    width: 80%;
+    max-width: 100%;
+    white-space: nowrap;
+    background-color: white;
+}
+
+table td, table th {
+    text-align: center;
+    padding: 8px;
+}
+
+table td {
+    border-right: 1px solid #f8f8f8;
+}
+
+table th {
+    color: #ffffff;
+    background: #4FC3A1;
+}
+
+td:nth-of-type(1) {
+    width: 45%;
+}
+
+td:nth-of-type(2) {
+    width: 45%;
+}
+
+td:nth-of-type(3) {
+    width: 10%;
+}
+
+.delete-button {
+    appearance: none;
+    background-color: #e82c2c;
+    border: 1px solid rgba(27, 31, 35, .15);
+    border-radius: 6px;
+    box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    padding: 6px 16px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+.delete-button:hover {
+    background-color: #ff0000;
+}
+
+.form-add-contact-inputs input[type=submit]:hover {
+    background-color: #4FC3A1;
+}
+
+table thead th:nth-child(odd) {
+    color: #ffffff;
+    background: #324960;
+}
+
+table tr:nth-child(even) {
+    background: #F8F8F8;
+}
+
+h1 {
+    text-align: center;
+}
+
+label {
+    font-size: 20px;
+}
+@media screen and (max-width: 460px) {
+    th,td {
+        font-size: 16px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+@media screen and (max-width: 425px) {
+    .form-add-contact-inputs input[type=tel], [type=text] {
+        width: 350px;
+    }
+
+    .form-add-contact-inputs input[type=submit] {
+        width: 350px;
+    }
+    th,td {
+        font-size: 14px;
+    }
+}
